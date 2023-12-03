@@ -1,0 +1,67 @@
+body {
+    font-family: sans-serif;
+    height: 100%;
+    margin: 0;
+    background: #261c33;
+    overflow: hidden;
+    display: flex; 
+    align-items: center; 
+    justify-content: center 
+  }
+body #app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selectors div{
+    margin: 10px 0;
+}
+
+.selectors div label{
+    color: #fff;
+    display: block;
+}
+
+.selectors div input{
+    margin: 0;
+}
+
+button{
+    margin: 10px 5px;
+    outline: none;
+    background-color: orangered;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    color: cyan;
+    transition: 1s;
+}
+
+button[id="reset"]{
+    margin-left: 0;
+}
+
+button:hover{
+    background-color: orange;
+    color: black;
+    scale: 1.1;
+    rotate: 10deg;
+}
+.selectors {
+    margin: 30px;
+    position: relative;
+    z-index: 100;
+}
+.output .outer-border{
+    padding: 50px;
+    margin-top: 50px;
+    border: 1px solid green;
+}
+
+.output .outer-border .box{
+    height: 300px;
+    width: 300px;
+    background-color: purple;
+    
+}
