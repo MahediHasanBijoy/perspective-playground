@@ -19,5 +19,17 @@ createApp({
                     rotateZ(${this.rotateZ}deg)`
             }
         }
-    }
+    },
+    methods: {
+        reset(){
+            this.perspective = 0
+            this.rotateX = 0
+            this.rotateY = 0
+            this.rotateZ = 0
+        }, 
+        copy(){
+            let text = `transform: ${this.boxStyle.transform}`
+            navigator.clipboard.writeText(text) // copy to clipboard
+        }
+    },
 }).mount('#app')
